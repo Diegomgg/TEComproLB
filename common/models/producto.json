@@ -1,0 +1,38 @@
+{
+  "name": "producto",
+  "plural": "productos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "precio": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "esdeusuario": {
+      "type": "belongsTo",
+      "model": "usuario",
+      "foreignKey": ""
+    },
+    "venta": {
+      "type": "belongsTo",
+      "model": "venta",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

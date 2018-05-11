@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "miConexion": {
+    "host": "ds229468.mlab.com",
+    "port": 29468,
+    "database": "tecompro",
+    "password": "tecomprodmgg",
+    "name": "miConexion",
+    "connector": "mongodb",
+    "user": "diegomgg"
+  }
+}

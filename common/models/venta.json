@@ -1,0 +1,44 @@
+{
+  "name": "venta",
+  "plural": "ventas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "comprador": {
+      "type": "object",
+      "required": true
+    },
+    "vendedor": {
+      "type": "object",
+      "required": true
+    },
+    "productos": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "precio_total": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "usuarios": {
+      "type": "hasMany",
+      "model": "usuario",
+      "foreignKey": ""
+    },
+    "productosvendidos": {
+      "type": "hasMany",
+      "model": "producto",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
